@@ -47,13 +47,13 @@ def scrape_youtube(latest_views, title_video_id, title_list, api_key):
     return outtext, latest_views_updated, views_in_millions
 
 def surpass_message(api,title_list,views_in_millions,views_in_millions_updated,member):
-    image_list = os.listdir('../pics/'+member.lower()+'/')
+    image_list = os.listdir('pics/'+member.lower()+'/')
     image_name = random.choice(image_list)
     for i in range(len(views_in_millions)):
         if(views_in_millions_updated[i]>views_in_millions[i]):
             message = ('[SURPASSED]\n'+title_list[i]+ ' has surpassed '+ str(views_in_millions_updated[i])+'M Views\n'+member.capitalize()+ '! @GFRDOfficial #GFRIEND')
             print('Tweeting achievement message for '+ title_list[i])
-            api.update_with_media('../pics/'+member.lower()+'/'+image_name,message)
+            api.update_with_media('pics/'+member.lower()+'/'+image_name,message)
 
 def run_scraper(twt_api,yt_api,kst_time,member,username):
     #Start thread's head
