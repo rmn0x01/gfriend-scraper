@@ -25,8 +25,8 @@ def update_status(api,text,latest,image):
 
 def scrape_youtube(latest_views,api_key):
     print("Scraping Youtube Views...")
-    title_video_id = ['GU7icQFVzHo', 'vKMeRMAVaDw', 'YYHyAIFG3iI', 'bjRMhQpOYAM', '0VKcLPdY9lI', 'r_6q_-d-7Sk', 'Se8bbsUFjC8', '1ZhDsPdvl6c', 'i1n_1jrUEjU', 'hRPrpLSo4To', 'lnXXfYA91Y8', 'wctRcg67E_g', 'ZsYwEV_ge4Y', 'k7npTim4Xj4','_XyBa8QsVQU','Oyf5o1zWMd0','9iPLjmz3_U4','M9P90QTo_uE','iciFwCnsyY4', 'TbPHPX3hSPA', 'Zll7O1v63aY', 'VMiYLPP4QCg', 'mc274HUFhQQ','YTWwz6R6jy0','gMHP8ZXvuMM','kx5TWKPE5sU','XQSse3b2ge4']
-    title_list = ['Glass Bead','Glass Bead','Me Gustas Tu','Me Gustas Tu','Rough','Rough','Navillera','Navillera','Fingertip','Fingertip','Love Whisper','Love Whisper','Summer Rain','Summer Rain','TFTMN','TFTMN','Sunny Summer','Sunny Summer','Sunrise','Sunrise','Fever','Fever','Fallin Light','Memoria','Flower','Crossroads', 'Apple']
+    title_video_id = ['GU7icQFVzHo', 'vKMeRMAVaDw', 'YYHyAIFG3iI', 'bjRMhQpOYAM', '0VKcLPdY9lI', 'r_6q_-d-7Sk', 'Se8bbsUFjC8', '1ZhDsPdvl6c', 'i1n_1jrUEjU', 'hRPrpLSo4To', 'lnXXfYA91Y8', 'wctRcg67E_g', 'ZsYwEV_ge4Y', 'k7npTim4Xj4','_XyBa8QsVQU','Oyf5o1zWMd0','9iPLjmz3_U4','M9P90QTo_uE','iciFwCnsyY4', 'TbPHPX3hSPA', 'Zll7O1v63aY', 'VMiYLPP4QCg', 'mc274HUFhQQ','YTWwz6R6jy0','gMHP8ZXvuMM','kx5TWKPE5sU','XQSse3b2ge4','LmBYPXGqtss']
+    title_list = ['Glass Bead','Glass Bead','Me Gustas Tu','Me Gustas Tu','Rough','Rough','Navillera','Navillera','Fingertip','Fingertip','Love Whisper','Love Whisper','Summer Rain','Summer Rain','TFTMN','TFTMN','Sunny Summer','Sunny Summer','Sunrise','Sunrise','Fever','Fever','Fallin Light','Memoria','Flower','Crossroads', 'Apple','Mago']
     part = [ 'snippet','contentDetails','statistics']
     id_str = ','.join(title_video_id)
     part_str = ','.join(part)
